@@ -1,0 +1,20 @@
+
+Consider the following abstract types.
+
+• Scanner, with method scanDocuments().
+• Printer, with method printDocuments().
+• Copier, with methods scanDocuments() and printDocuments().
+
+Identify the correct subtype and inheritance relationships between the classes. 
+
+Scanner and Printer are subtypes of Copier
+This would imply Scanner and Printer inherit from Copier, which is backward.
+
+
+Copier is a subtype of Scanner and Printer .     Correct
+
+Scanner and Printer both inherit from Copier.    Correct
+
+Copier inherits from both Scanner and Printer
+In Java, a class cannot inherit from multiple classes. 
+If Scanner and Printer are interfaces, Copier implements them, not "inherits" them.

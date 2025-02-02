@@ -1,0 +1,49 @@
+Consider the following code.
+
+  public class Student{
+        public String sname;
+        public String sid;
+        public int sclass;
+
+        public Student(String s_name,String s_id, int s_class){
+             this.sname = s_name;
+             this.sid =s_id;
+             this.sclass = s_class;
+        }
+        public void display() {
+             System.out.println("name:"+sname);
+             System.out.println("id:"+sid);
+             System.out.println("class:"+sclass);
+        }
+  }
+  public class Toppers extends Student{
+        public int marks;
+
+        public Toppers(int marks){
+            this.marks = marks;
+        }
+
+        public void display() {
+            super.display();
+            System.out.println("marks:"+marks);
+        }
+ }  
+ public class FClass{
+        public static void main(String[] args){
+             Toppers t = new Toppers(30);
+             t.display();
+        }
+ }
+
+
+Explanation:
+The given code does not compile because:
+
+The Toppers class extends Student, but Student has only a parameterized constructor.
+
+When a class extends another, the default constructor (super()) is implicitly called unless explicitly specified.
+Since Student does not have a no-argument constructor, super() results in a compilation error.
+Two ways to fix this error:
+
+Solution 1: Define a no-argument constructor in Student.
+Solution 2: Explicitly call the parameterized constructor of Student in Toppers.

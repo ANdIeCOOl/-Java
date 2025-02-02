@@ -1,0 +1,13 @@
+which method overides parent class?
+
+Method overriding occurs when:
+A subclass defines a method with the same name, return type, and parameters as a method in its superclass.
+The method in the subclass provides a specific implementation of the method defined in the superclass.
+The perimeter() method in Pentagon has the same name, return type (void), and parameters (no parameters) as the perimeter() method in Polygon. 
+Therefore, it overrides the perimeter() method of the Polygon class.
+
+The angleSum() method in Pentagon has a different parameter list (it takes an int x parameter) compared to the angleSum() method in Polygon (which has no parameters). 
+Therefore, this is not method overriding. Instead, it is method overloading because the method name is the same but the parameter list is different.
+
+Overriding: perimeter() in Pentagon overrides perimeter() in Polygon.
+Overloading: angleSum(int x) in Pentagon overloads angleSum() in Polygon.
